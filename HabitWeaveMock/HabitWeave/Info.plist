@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>HabitWeave はカレンダーの空き時間を分析し、最適な習慣実行タイミングを提案するためにカレンダーへのアクセスが必要です。</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>HabitWeave はカレンダーの空き時間を分析するためにカレンダーへのアクセスが必要です。</string>
+	<key>NSRemindersFullAccessUsageDescription</key>
+	<string>HabitWeave は習慣タスクをリマインダーとして管理するためにリマインダーへのアクセスが必要です。</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>HabitWeave は習慣タスクをリマインダーとして管理するためにリマインダーへのアクセスが必要です。</string>
+</dict>
+</plist>
