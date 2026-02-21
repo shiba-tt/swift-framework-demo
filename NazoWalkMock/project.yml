@@ -1,0 +1,69 @@
+name: NazoWalk
+options:
+  bundleIdPrefix: com.example.nazowalk
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  NazoWalk:
+    type: application
+    platform: iOS
+    sources:
+      - path: NazoWalk
+    settings:
+      base:
+        INFOPLIST_FILE: NazoWalk/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.nazowalk
+        PRODUCT_NAME: NazoWalk
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: NazoWalkWidgets
+      - target: NazoWalkClip
+
+  NazoWalkClip:
+    type: app-clip
+    platform: iOS
+    sources:
+      - path: NazoWalkClip
+      - path: NazoWalk/Models/PuzzleSpot.swift
+      - path: NazoWalk/Models/Puzzle.swift
+      - path: NazoWalk/Models/PuzzleProgress.swift
+      - path: NazoWalk/Managers/SpotManager.swift
+    settings:
+      base:
+        INFOPLIST_FILE: NazoWalkClip/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.nazowalk.clip
+        PRODUCT_NAME: NazoWalkClip
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        _EXPERIMENTAL_ASSOCIATED_APPCLIP_APP_IDENTIFIERS: "$(AppIdentifierPrefix)com.example.nazowalk"
+
+  NazoWalkWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NazoWalkWidgets
+      - path: NazoWalk/Models/PuzzleProgress.swift
+    settings:
+      base:
+        INFOPLIST_FILE: NazoWalkWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.nazowalk.widgets
+        PRODUCT_NAME: NazoWalkWidgets
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"

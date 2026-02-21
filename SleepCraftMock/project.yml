@@ -1,0 +1,56 @@
+name: SleepCraft
+options:
+  bundleIdPrefix: com.example.sleepcraft
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  SleepCraft:
+    type: application
+    platform: iOS
+    sources:
+      - path: SleepCraft
+    settings:
+      base:
+        INFOPLIST_FILE: SleepCraft/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.sleepcraft
+        PRODUCT_NAME: SleepCraft
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SUPPORTS_LIVE_ACTIVITIES: YES
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: SleepCraftWidgets
+    entitlements:
+      path: SleepCraft/SleepCraft.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.developer.healthkit: true
+
+  SleepCraftWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: SleepCraftWidgets
+      - path: SleepCraft/Models/SleepPhase.swift
+      - path: SleepCraft/Models/SleepCraftAlarmMetadata.swift
+    settings:
+      base:
+        INFOPLIST_FILE: SleepCraftWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.sleepcraft.widgets
+        PRODUCT_NAME: SleepCraftWidgets
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
