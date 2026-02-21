@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAlarmKitUsageDescription</key>
+	<string>RitualAlarm は朝のルーティンをアラームで管理するためにアラーム機能を使用します。サイレントモードや集中モード中でも確実に通知されます。</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>NSSupportsLiveActivitiesFrequentUpdates</key>
+	<true/>
+</dict>
+</plist>
