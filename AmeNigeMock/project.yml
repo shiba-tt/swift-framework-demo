@@ -1,0 +1,55 @@
+name: AmeNige
+options:
+  bundleIdPrefix: com.example.amenige
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  AmeNige:
+    type: application
+    platform: iOS
+    sources:
+      - path: AmeNige
+    settings:
+      base:
+        INFOPLIST_FILE: AmeNige/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.amenige
+        PRODUCT_NAME: AmeNige
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SUPPORTS_LIVE_ACTIVITIES: YES
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: AmeNigeWidgets
+    entitlements:
+      path: AmeNige/AmeNige.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+
+  AmeNigeWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: AmeNigeWidgets
+      - path: AmeNige/Models/PrecipitationForecast.swift
+      - path: AmeNige/Models/DryWindow.swift
+    settings:
+      base:
+        INFOPLIST_FILE: AmeNigeWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.amenige.widgets
+        PRODUCT_NAME: AmeNigeWidgets
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
