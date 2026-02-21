@@ -1,0 +1,56 @@
+name: RitualAlarm
+options:
+  bundleIdPrefix: com.example.ritualalarm
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  RitualAlarm:
+    type: application
+    platform: iOS
+    sources:
+      - path: RitualAlarm
+    settings:
+      base:
+        INFOPLIST_FILE: RitualAlarm/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.ritualalarm
+        PRODUCT_NAME: RitualAlarm
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SUPPORTS_LIVE_ACTIVITIES: YES
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: RitualAlarmWidgets
+    entitlements:
+      path: RitualAlarm/RitualAlarm.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+
+  RitualAlarmWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: RitualAlarmWidgets
+      # 共有モデル（Widget からもアクセスが必要）
+      - path: RitualAlarm/Models/RoutineStep.swift
+      - path: RitualAlarm/Models/RitualAlarmMetadata.swift
+    settings:
+      base:
+        INFOPLIST_FILE: RitualAlarmWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.ritualalarm.widgets
+        PRODUCT_NAME: RitualAlarmWidgets
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
