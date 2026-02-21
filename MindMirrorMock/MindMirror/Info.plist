@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>ja</string>
+	<key>CFBundleDisplayName</key>
+	<string>MindMirror</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSSensorKitUsageDescription</key>
+	<string>メンタルヘルスの研究のためにセンサーデータを収集します。</string>
+	<key>NSSensorKitUsageDetail</key>
+	<dict>
+		<key>SRSensorAmbientLightSensor</key>
+		<string>生活リズムの分析に環境光データを使用します。</string>
+		<key>SRSensorKeyboardMetrics</key>
+		<string>タイピングパターンの変化を追跡します。</string>
+		<key>SRSensorDeviceUsageReport</key>
+		<string>デバイス使用パターンを分析します。</string>
+		<key>SRSensorPhoneUsageReport</key>
+		<string>通話パターンを分析します。</string>
+		<key>SRSensorMessagesUsageReport</key>
+		<string>メッセージの送受信パターンを分析します。</string>
+		<key>SRSensorVisits</key>
+		<string>訪問場所のパターンを分析します。</string>
+	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>睡眠や歩数データと行動パターンを統合分析するために使用します。</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>
