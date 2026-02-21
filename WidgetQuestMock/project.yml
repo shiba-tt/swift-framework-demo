@@ -1,0 +1,54 @@
+name: WidgetQuest
+options:
+  bundleIdPrefix: com.example.widgetquest
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  WidgetQuest:
+    type: application
+    platform: iOS
+    sources:
+      - path: WidgetQuest
+    settings:
+      base:
+        INFOPLIST_FILE: WidgetQuest/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.widgetquest
+        PRODUCT_NAME: WidgetQuest
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: WidgetQuestWidgets
+    entitlements:
+      path: WidgetQuest/WidgetQuest.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+
+  WidgetQuestWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: WidgetQuestWidgets
+      - path: WidgetQuest/Models/Hero.swift
+      - path: WidgetQuest/Models/QuestEvent.swift
+    settings:
+      base:
+        INFOPLIST_FILE: WidgetQuestWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.widgetquest.widgets
+        PRODUCT_NAME: WidgetQuestWidgets
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
