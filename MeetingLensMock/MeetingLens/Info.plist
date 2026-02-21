@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>MeetingLens はカレンダーの会議データを分析し、会議コストの可視化と最適化提案を行うためにカレンダーへのアクセスが必要です。</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>MeetingLens はカレンダーの会議データを分析するためにカレンダーへのアクセスが必要です。</string>
+</dict>
+</plist>
