@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAlarmKitUsageDescription</key>
+	<string>SleepCraft は睡眠サイクルに合わせた最適なタイミングでアラームを鳴らすためにアラーム機能を使用します。サイレントモードや集中モード中でも確実に起床できます。</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>SleepCraft は睡眠ステージデータを読み取り、浅い睡眠のタイミングでスマートアラームを鳴らします。</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>SleepCraft は睡眠分析の結果を記録し、睡眠の質を追跡します。</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>NSSupportsLiveActivitiesFrequentUpdates</key>
+	<true/>
+</dict>
+</plist>

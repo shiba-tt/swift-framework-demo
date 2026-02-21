@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>NazoWalk はスポットにいることを確認するために位置情報を使用します。</string>
+	<key>NSAppClip</key>
+	<dict>
+		<key>NSAppClipRequestLocationConfirmation</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
