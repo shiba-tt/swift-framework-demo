@@ -121,7 +121,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 1 | MindMirror — 日常行動からメンタルヘルスを見守る研究アプリ | ✅ 作成済み | `MindMirrorMock` |
 | 2 | TypeGuard — タイピングで見つける神経疾患の兆候 | ✅ 作成済み | `TypeGuardMock` |
 | 3 | LightLife — 光環境と生活リズムの関係を解明 | ✅ 作成済み | `LightLifeMock` |
-| 4 | SocialPulse — デジタル社会的つながりの健康指標 | ⬜ 未作成 | — |
+| 4 | SocialPulse — デジタル社会的つながりの健康指標 | ✅ 作成済み | `SocialPulseMock` |
 | 5 | ChronoSense — 24時間の生体リズムを可視化 | ✅ 作成済み | `ChronoSenseMock` |
 
 ### WeatherKit
@@ -142,12 +142,12 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 2 | WidgetQuest — ウィジェットだけで遊べるRPG | ✅ 作成済み | `WidgetQuestMock` |
 | 3 | ControlDeck — iPhoneをスマートホームリモコン化 | ✅ 作成済み | `ControlDeckMock` |
 | 4 | PixelPet — ウィジェットで育てるデジタルペット | ✅ 作成済み | `PixelPetMock` |
-| 5 | LiveBoard — リアルタイムコラボホワイトボード | ⬜ 未作成 | — |
+| 5 | LiveBoard — リアルタイムコラボホワイトボード | ✅ 作成済み | `LiveBoardMock` |
 
 ---
 
 ## 進捗サマリー
 
 - **アイデア総数:** 70
-- **作成済み:** 50 / 70
-- **未作成:** 20 / 70
+- **作成済み:** 52 / 70
+- **未作成:** 18 / 70
