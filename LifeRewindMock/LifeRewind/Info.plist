@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>LifeRewind は過去のカレンダーデータを分析し、人生の振り返りを生成するためにカレンダーへのフルアクセスが必要です。</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>LifeRewind はカレンダーデータを読み取って人生のタイムラインを作成するためにアクセスが必要です。</string>
+</dict>
+</plist>
