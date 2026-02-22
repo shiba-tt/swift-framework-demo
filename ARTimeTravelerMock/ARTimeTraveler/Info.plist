@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppClipRequestEphemeralUserNotification</key>
+	<true/>
+	<key>NSAppClipRequestLocationConfirmation</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>AR体験で歴史的建造物をカメラで表示するために使用します</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>現在地の歴史スポットを特定するために位置情報を使用します</string>
+</dict>
+</plist>
