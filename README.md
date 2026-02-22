@@ -50,7 +50,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 |---|---------|------|------------|
 | 1 | CineMagic — AI リアルタイム映画フィルター撮影 | ⬜ 未作成 | — |
 | 2 | VoiceMorph — リアルタイムボイスチェンジャー | ✅ 作成済み | `VoiceMorphMock` |
-| 3 | WatchParty — 離れた友人と同期視聴 | ⬜ 未作成 | — |
+| 3 | WatchParty — 離れた友人と同期視聴 | ✅ 作成済み | `WatchPartyMock` |
 | 4 | SoundScape — 環境音AI分析・可視化 | ⬜ 未作成 | — |
 | 5 | ReelForge — AI ショートムービー自動生成 | ⬜ 未作成 | — |
 
@@ -112,7 +112,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 2 | SoundField — 空間オーディオDJ | ⬜ 未作成 | — |
 | 3 | InvisibleWall — 見えない境界線セキュリティ | ⬜ 未作成 | — |
 | 4 | BumpShare — 近づけて共有 | ✅ 作成済み | `BumpShareMock` |
-| 5 | SpaceCanvas — 空間お絵描きAR | ⬜ 未作成 | — |
+| 5 | SpaceCanvas — 空間お絵描きAR | ✅ 作成済み | `SpaceCanvasMock` |
 
 ### SensorKit
 
@@ -149,5 +149,5 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 ## 進捗サマリー
 
 - **アイデア総数:** 70
-- **作成済み:** 38 / 70
-- **未作成:** 32 / 70
+- **作成済み:** 40 / 70
+- **未作成:** 30 / 70
