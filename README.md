@@ -99,7 +99,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | # | アイデア | 状態 | プロジェクト |
 |---|---------|------|------------|
 | 1 | SmartSnap — AI写真アルバムオーガナイザー | ✅ 作成済み | `SmartSnapMock` |
-| 2 | VoiceMemo AI — 音声メモ構造化エンジン | ⬜ 未作成 | — |
+| 2 | VoiceMemo AI — 音声メモ構造化エンジン | ✅ 作成済み | `VoiceMemoAIMock` |
 | 3 | ContextCards — 名刺×AIネットワーキング | ⬜ 未作成 | — |
 | 4 | CookSnap — 冷蔵庫の中身からレシピ生成 | ✅ 作成済み | `CookSnapMock` |
 | 5 | DreamJournal — AI夢日記分析 | ✅ 作成済み | `DreamJournalMock` |
@@ -140,7 +140,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 |---|---------|------|------------|
 | 1 | MoodBoard Widget — ホーム画面が日記になる | ✅ 作成済み | `MoodBoardMock` |
 | 2 | WidgetQuest — ウィジェットだけで遊べるRPG | ✅ 作成済み | `WidgetQuestMock` |
-| 3 | ControlDeck — iPhoneをスマートホームリモコン化 | ⬜ 未作成 | — |
+| 3 | ControlDeck — iPhoneをスマートホームリモコン化 | ✅ 作成済み | `ControlDeckMock` |
 | 4 | PixelPet — ウィジェットで育てるデジタルペット | ✅ 作成済み | `PixelPetMock` |
 | 5 | LiveBoard — リアルタイムコラボホワイトボード | ⬜ 未作成 | — |
 
@@ -149,5 +149,5 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 ## 進捗サマリー
 
 - **アイデア総数:** 70
-- **作成済み:** 40 / 70
-- **未作成:** 30 / 70
+- **作成済み:** 42 / 70
+- **未作成:** 28 / 70
