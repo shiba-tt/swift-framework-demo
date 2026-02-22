@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>LightLife</string>
+	<key>CFBundleDisplayName</key>
+	<string>LightLife</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>NSSensorKitUsageDescription</key>
+	<string>LightLifeは光環境と生活リズムの研究のためにセンサーデータを収集します。</string>
+	<key>NSSensorKitUsageDetail</key>
+	<dict>
+		<key>SRSensorAmbientLightSensor</key>
+		<dict>
+			<key>UsageDescription</key>
+			<string>周囲の光環境を計測し、概日リズムの分析に使用します。</string>
+		</dict>
+		<key>SRSensorVisits</key>
+		<dict>
+			<key>UsageDescription</key>
+			<string>訪問場所のカテゴリを記録し、光曝露パターンの分析に使用します。GPS座標は収集しません。</string>
+		</dict>
+		<key>SRSensorDeviceUsageReport</key>
+		<dict>
+			<key>UsageDescription</key>
+			<string>画面使用パターンを分析し、夜間のブルーライト曝露を評価します。</string>
+		</dict>
+	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>睡眠データと合わせて光環境の影響を分析します。</string>
+</dict>
+</plist>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>ProximityParty</string>
+	<key>CFBundleDisplayName</key>
+	<string>ProximityParty</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>NSNearbyInteractionUsageDescription</key>
+	<string>ProximityPartyは他のプレイヤーとの距離と方向を計測してゲームに使用します。</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>近くのプレイヤーを検出してゲームに参加するためにローカルネットワークを使用します。</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_proximityparty._tcp</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>ARカメラアシスタンスでプレイヤーの方向を精密に検出します。</string>
+</dict>
+</plist>
