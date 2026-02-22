@@ -1,0 +1,35 @@
+name: SpaceCanvas
+options:
+  bundleIdPrefix: com.example.spacecanvas
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  SpaceCanvas:
+    type: application
+    platform: iOS
+    sources:
+      - path: SpaceCanvas
+    settings:
+      base:
+        INFOPLIST_FILE: SpaceCanvas/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.spacecanvas
+        PRODUCT_NAME: SpaceCanvas
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    entitlements:
+      path: SpaceCanvas/SpaceCanvas.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
