@@ -71,7 +71,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 1 | SoundForge — モジュラーオーディオ・ワークステーション | ⬜ 未作成 | — |
 | 2 | PedalBoard — ギタリスト向けAUv3エフェクトボード | ✅ 作成済み | `PedalBoardMock` |
 | 3 | SynthLab — ビジュアル・シンセサイザー学習アプリ | ✅ 作成済み | `SynthLabMock` |
-| 4 | VoiceStudio — ポッドキャスター向けリアルタイム音声加工 | ⬜ 未作成 | — |
+| 4 | VoiceStudio — ポッドキャスター向けリアルタイム音声加工 | ✅ 作成済み | `VoiceStudioMock` |
 | 5 | AUBazaar — AUv3プラグイン試聴・比較プラットフォーム | ⬜ 未作成 | — |
 
 ### EnergyKit
@@ -81,7 +81,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 1 | GreenCharge — EV充電最適化×ゲーミフィケーション | ✅ 作成済み | `GreenChargeMock` |
 | 2 | GridPulse — 電力グリッドの鼓動を可視化するリビングアート | ✅ 作成済み | `GridPulseMock` |
 | 3 | WattWise — 家族で楽しむ節電チャレンジ | ✅ 作成済み | `WattWiseMock` |
-| 4 | ThermoShift — AIサーモスタット×快適度の予測最適化 | ⬜ 未作成 | — |
+| 4 | ThermoShift — AIサーモスタット×快適度の予測最適化 | ✅ 作成済み | `ThermoShiftMock` |
 | 5 | GridBeat — 電力市場リアルタイムトラッカー | ⬜ 未作成 | — |
 
 ### EventKit
@@ -149,5 +149,5 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 ## 進捗サマリー
 
 - **アイデア総数:** 70
-- **作成済み:** 32 / 70
-- **未作成:** 38 / 70
+- **作成済み:** 34 / 70
+- **未作成:** 36 / 70
