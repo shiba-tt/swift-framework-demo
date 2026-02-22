@@ -110,7 +110,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 |---|---------|------|------------|
 | 1 | ProximityParty — 空間認識マルチプレイヤーゲーム | ✅ 作成済み | `ProximityPartyMock` |
 | 2 | SoundField — 空間オーディオDJ | ✅ 作成済み | `SoundFieldMock` |
-| 3 | InvisibleWall — 見えない境界線セキュリティ | ⬜ 未作成 | — |
+| 3 | InvisibleWall — 見えない境界線セキュリティ | ✅ 作成済み | `InvisibleWallMock` |
 | 4 | BumpShare — 近づけて共有 | ✅ 作成済み | `BumpShareMock` |
 | 5 | SpaceCanvas — 空間お絵描きAR | ✅ 作成済み | `SpaceCanvasMock` |
 
@@ -130,7 +130,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 |---|---------|------|------------|
 | 1 | SoraNavi — AI写真撮影スポットアドバイザー | ✅ 作成済み | `SoraNaviMock` |
 | 2 | KiseKae — 天気連動バーチャルコーディネーター | ✅ 作成済み | `KiseKaeMock` |
-| 3 | TenKi Log — 天気と人生のライフログ | ⬜ 未作成 | — |
+| 3 | TenKi Log — 天気と人生のライフログ | ✅ 作成済み | `TenKiLogMock` |
 | 4 | AmeNige — 分単位リアルタイム雨よけナビ | ✅ 作成済み | `AmeNigeMock` |
 | 5 | Hoshi-Zora — 天体観測コンディションスコアラー | ✅ 作成済み | `HoshiZoraMock` |
 
@@ -149,5 +149,5 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 ## 進捗サマリー
 
 - **アイデア総数:** 70
-- **作成済み:** 54 / 70
-- **未作成:** 16 / 70
+- **作成済み:** 56 / 70
+- **未作成:** 14 / 70
