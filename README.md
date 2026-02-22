@@ -82,7 +82,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 2 | GridPulse — 電力グリッドの鼓動を可視化するリビングアート | ✅ 作成済み | `GridPulseMock` |
 | 3 | WattWise — 家族で楽しむ節電チャレンジ | ✅ 作成済み | `WattWiseMock` |
 | 4 | ThermoShift — AIサーモスタット×快適度の予測最適化 | ✅ 作成済み | `ThermoShiftMock` |
-| 5 | GridBeat — 電力市場リアルタイムトラッカー | ⬜ 未作成 | — |
+| 5 | GridBeat — 電力市場リアルタイムトラッカー | ✅ 作成済み | `GridBeatMock` |
 
 ### EventKit
 
@@ -92,7 +92,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 2 | HabitWeave — 習慣をカレンダーに織り込むトラッカー | ✅ 作成済み | `HabitWeaveMock` |
 | 3 | MeetingLens — 会議コスト可視化＆最適化ツール | ✅ 作成済み | `MeetingLensMock` |
 | 4 | LifeRewind — カレンダーベースのライフログ＆回顧録 | ✅ 作成済み | `LifeRewindMock` |
-| 5 | SyncLife — マルチカレンダー調整＆ファミリーコーディネーター | ⬜ 未作成 | — |
+| 5 | SyncLife — マルチカレンダー調整＆ファミリーコーディネーター | ✅ 作成済み | `SyncLifeMock` |
 
 ### Foundation Models
 
@@ -149,5 +149,5 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 ## 進捗サマリー
 
 - **アイデア総数:** 70
-- **作成済み:** 34 / 70
-- **未作成:** 36 / 70
+- **作成済み:** 36 / 70
+- **未作成:** 34 / 70
