@@ -1,0 +1,35 @@
+name: SoundForge
+options:
+  bundleIdPrefix: com.example.soundforge
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  SoundForge:
+    type: application
+    platform: iOS
+    sources:
+      - path: SoundForge
+    settings:
+      base:
+        INFOPLIST_FILE: SoundForge/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.soundforge
+        PRODUCT_NAME: SoundForge
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    entitlements:
+      path: SoundForge/SoundForge.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
