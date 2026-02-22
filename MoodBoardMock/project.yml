@@ -1,0 +1,63 @@
+name: MoodBoard
+options:
+  bundleIdPrefix: com.example.moodboard
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  MoodBoard:
+    type: application
+    platform: iOS
+    sources:
+      - path: MoodBoard
+    settings:
+      base:
+        INFOPLIST_FILE: MoodBoard/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.moodboard
+        PRODUCT_NAME: MoodBoard
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: MoodBoardWidgets
+    entitlements:
+      path: MoodBoard/MoodBoard.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - group.com.example.moodboard
+
+  MoodBoardWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: MoodBoardWidgets
+      - path: MoodBoard/Models/MoodEntry.swift
+      - path: MoodBoard/Models/MoodType.swift
+      - path: MoodBoard/Models/MoodStats.swift
+    settings:
+      base:
+        INFOPLIST_FILE: MoodBoardWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.moodboard.widgets
+        PRODUCT_NAME: MoodBoardWidgets
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
+    entitlements:
+      path: MoodBoard/MoodBoard.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - group.com.example.moodboard
