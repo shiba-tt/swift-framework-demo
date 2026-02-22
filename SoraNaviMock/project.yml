@@ -1,0 +1,35 @@
+name: SoraNavi
+options:
+  bundleIdPrefix: com.example.soranavi
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  SoraNavi:
+    type: application
+    platform: iOS
+    sources:
+      - path: SoraNavi
+    settings:
+      base:
+        INFOPLIST_FILE: SoraNavi/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.soranavi
+        PRODUCT_NAME: SoraNavi
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    entitlements:
+      path: SoraNavi/SoraNavi.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
