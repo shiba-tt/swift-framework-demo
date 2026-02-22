@@ -1,0 +1,56 @@
+name: LightLife
+options:
+  bundleIdPrefix: com.example.lightlife
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  LightLife:
+    type: application
+    platform: iOS
+    sources:
+      - path: LightLife
+    settings:
+      base:
+        INFOPLIST_FILE: LightLife/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.lightlife
+        PRODUCT_NAME: LightLife
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: LightLifeWidgets
+    entitlements:
+      path: LightLife/LightLife.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.developer.sensorkit.reader.allow: true
+
+  LightLifeWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LightLifeWidgets
+      - path: LightLife/Models/LightSample.swift
+      - path: LightLife/Models/CircadianProfile.swift
+      - path: LightLife/Models/DailyLightReport.swift
+    settings:
+      base:
+        INFOPLIST_FILE: LightLifeWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.lightlife.widgets
+        PRODUCT_NAME: LightLifeWidgets
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"

@@ -1,0 +1,56 @@
+name: ProximityParty
+options:
+  bundleIdPrefix: com.example.proximityparty
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  ProximityParty:
+    type: application
+    platform: iOS
+    sources:
+      - path: ProximityParty
+    settings:
+      base:
+        INFOPLIST_FILE: ProximityParty/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.proximityparty
+        PRODUCT_NAME: ProximityParty
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: ProximityPartyWidgets
+    entitlements:
+      path: ProximityParty/ProximityParty.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.developer.nearby-interaction: true
+
+  ProximityPartyWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: ProximityPartyWidgets
+      - path: ProximityParty/Models/Player.swift
+      - path: ProximityParty/Models/GameMode.swift
+      - path: ProximityParty/Models/GameSession.swift
+    settings:
+      base:
+        INFOPLIST_FILE: ProximityPartyWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.proximityparty.widgets
+        PRODUCT_NAME: ProximityPartyWidgets
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
