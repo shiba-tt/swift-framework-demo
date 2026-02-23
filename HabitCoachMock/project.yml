@@ -1,0 +1,35 @@
+name: HabitCoach
+options:
+  bundleIdPrefix: com.example.habitcoach
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  HabitCoach:
+    type: application
+    platform: iOS
+    sources:
+      - path: HabitCoach
+    settings:
+      base:
+        INFOPLIST_FILE: HabitCoach/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.habitcoach
+        PRODUCT_NAME: HabitCoach
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    entitlements:
+      path: HabitCoach/HabitCoach.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
