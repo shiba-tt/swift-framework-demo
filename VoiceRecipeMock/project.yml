@@ -1,0 +1,35 @@
+name: VoiceRecipe
+options:
+  bundleIdPrefix: com.example.voicerecipe
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  defaultConfig: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "6.1"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  VoiceRecipe:
+    type: application
+    platform: iOS
+    sources:
+      - path: VoiceRecipe
+    settings:
+      base:
+        INFOPLIST_FILE: VoiceRecipe/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.voicerecipe
+        PRODUCT_NAME: VoiceRecipe
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+    entitlements:
+      path: VoiceRecipe/VoiceRecipe.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
