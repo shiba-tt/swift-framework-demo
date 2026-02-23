@@ -52,7 +52,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 2 | VoiceMorph — リアルタイムボイスチェンジャー | ✅ 作成済み | `VoiceMorphMock` |
 | 3 | WatchParty — 離れた友人と同期視聴 | ✅ 作成済み | `WatchPartyMock` |
 | 4 | SoundScape — 環境音AI分析・可視化 | ✅ 作成済み | `SoundScapeMock` |
-| 5 | ReelForge — AI ショートムービー自動生成 | ⬜ 未作成 | — |
+| 5 | ReelForge — AI ショートムービー自動生成 | ✅ 作成済み | `ReelForgeMock` |
 
 ### Core ML
 
@@ -72,7 +72,7 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 | 2 | PedalBoard — ギタリスト向けAUv3エフェクトボード | ✅ 作成済み | `PedalBoardMock` |
 | 3 | SynthLab — ビジュアル・シンセサイザー学習アプリ | ✅ 作成済み | `SynthLabMock` |
 | 4 | VoiceStudio — ポッドキャスター向けリアルタイム音声加工 | ✅ 作成済み | `VoiceStudioMock` |
-| 5 | AUBazaar — AUv3プラグイン試聴・比較プラットフォーム | ⬜ 未作成 | — |
+| 5 | AUBazaar — AUv3プラグイン試聴・比較プラットフォーム | ✅ 作成済み | `AUBazaarMock` |
 
 ### EnergyKit
 
@@ -149,5 +149,5 @@ Apple フレームワークを活用した iOS アプリのモック集。各フ
 ## 進捗サマリー
 
 - **アイデア総数:** 70
-- **作成済み:** 62 / 70
-- **未作成:** 8 / 70
+- **作成済み:** 64 / 70
+- **未作成:** 6 / 70
